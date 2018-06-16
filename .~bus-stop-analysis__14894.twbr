@@ -436,6 +436,21 @@
           <aggregation value='true' />
         </view>
         <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0kcxido1hlpfzw1dk95770mepbax].[Longitude (generated)]' field-type='quantitative' max='-9546993.1451018602' min='-9632919.9879377317' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0kcxido1hlpfzw1dk95770mepbax].[Latitude (generated)]' field-type='quantitative' max='4861226.452528106' min='4797470.7923986083' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0kcxido1hlpfzw1dk95770mepbax].[sum:Calculation_918804702690586625:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-diverging'>
+                <color>#ffffff</color>
+                <color>#ececec</color>
+                <color>#d9d9d9</color>
+                <color>#f4bc4e</color>
+                <color>#c26b51</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
           <style-rule element='map-layer'>
             <format attr='enabled' id='tab_base' value='true' />
             <format attr='enabled' id='um_lcover' value='true' />
@@ -509,6 +524,9 @@
           </strip>
         </edge>
       </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='1' />
+      </viewpoint>
     </window>
   </windows>
 </workbook>
